@@ -1,0 +1,112 @@
+header{
+  
+    background-color: var(--color-amarillo);
+    padding-bottom: 1em ;
+}
+header .contenedor-logo-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+header .contenedor-tablet{
+    width: 49%;
+} header img{
+    width: 100%;
+}
+header .contenedor-logo-search .Buscar-barra{
+
+  display: flex;
+}
+header .contenedor-logo-search form{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .contenedor-logo-search .Buscar-barra input{
+    border: none;
+    border-radius: 7px;
+    position: relative;
+    height: 100%;
+}
+header .contenedor-logo-search .Buscar-barra button{
+    background-color: #FFF;
+    border: none;
+    position: absolute;
+}
+header .contenedor-logo-search .Buscar-barra i{   
+    font-size: 16px;
+    color: gray;
+}
+header p{
+      padding: 10px;
+}
+header ul{
+    padding: 10px 0;
+}
+header a{
+    color: #000;   
+}
+header nav{
+    margin-bottom: 16px;
+    display: none;
+}
+header .burger{
+    text-align: center;
+}
+header .burger-menu{
+    width: 40px;
+    height: 40px;
+   color: #ffffff ;
+   background-color: var(--color--celeste);
+   border-radius: 4px;
+   border: none;
+}
+header .burger-menu i{
+    font-size: 24px;
+}
+@media (min-width:361px) {
+    /*---Header---*/
+     header .contenedor-tablet{
+       display: flex;
+       align-items: center;
+       max-width: 262px;
+       justify-content: space-evenly;
+   }
+    header .contenedor-logo-search{     
+           flex-wrap: nowrap; 
+            justify-content: none;
+            padding: 20px 0;     
+   }
+  
+    header .contenedor-logo-search .Buscar-barra{
+       height: 40px;
+   
+     }
+      header .contenedor-logo-search form{
+       display: flex;
+       justify-content:none;
+       align-items: center;
+   }
+   header .contenedor-logo-search input{
+       width: 90%;
+   }
+   
+   
+     header nav{
+       display: flex;
+       justify-content: space-evenly;
+   }
+    header ul {
+       padding: 10px 0;
+       display: flex;
+   }
+    header ul li{
+       padding: 0px 5px;
+   }
+    header .burger-menu{
+       
+      display:none;
+   } 
+}

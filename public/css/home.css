@@ -1,0 +1,168 @@
+.home{
+    background-color: var(--color--gris-claro);
+}
+
+/*---------- banner ----------*/
+
+.home .banner{
+    width: 100%;
+}
+
+/*---------- main ----------*/
+.home main {
+    width: 90%;
+    margin-left: 5%;
+}
+.home main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home main .products-img{
+    width: 100%;
+}
+.home main article{
+    margin-bottom: 10px ;
+    position: relative;
+    height: 354.69px;
+    width: 290.69px;
+    
+}
+
+.home main .descripcion{
+    margin-top: solid 1px var(--color--gris-claro);
+    padding: 15px;
+    background-color: #ffff;
+}
+.home main .fa-truck{
+    color: var(--color-verde);
+}
+.home main section div.descripcion i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--color-verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 275px;
+  
+}
+.home main .descripcion .precios{
+    display: flex;
+}
+.home main h4{
+ font-size: 24px;
+ color: var(--color--gris-oscuro);
+ padding: 10px;
+}
+.home main .precio{
+    font-size: 18px;
+}
+.home main p{
+    font-size: 16px;
+}
+.home main .descuento{
+    color: var(--color-verde);
+    margin-left: 10px;
+}
+.home main h5{
+   font-size: 16px;
+   color: var(--color--gris-oscuro);
+   font-weight: normal;
+   margin-top: 20px;
+  
+}
+.home main .fa-truck:hover{
+    animation: camion 1200ms 1;
+}
+
+@keyframes camion {
+    0% {transform: rotateZ(0deg)}
+    100%{transform: rotateZ(360deg)}
+}
+
+
+
+ /*----------- media querys ---------*/
+
+     /*--Tablet*--*/
+   
+@media (min-width:361px) {
+    
+    /*---main---*/
+    .home main h5{ 
+        margin-top: 6px;
+        display:none; 
+      }
+    
+    .home main article {
+        margin-bottom: 10px;
+        position: relative;
+        height: 220px;
+        width: 156px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home main section .descripcion{
+        padding: 8px;
+      
+    }
+    .home main section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 465px;
+        margin: auto;
+        padding-bottom: 22px;
+    }
+    .home main section div.descripcion i {
+        display: block;
+        font-size: 13px;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        border: 1px solid var(--color-verde);
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 3px;
+        top: 142px;
+    }
+    
+    
+}
+@media (min-width:769px) {
+    .home main {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .home main section {
+        max-width: 850px;  
+    }
+
+    home main article {
+        height: 227px;
+        width: 163px;
+    }
+    .home main h4{ 
+        padding: 15px;
+    }
+    .home main article {
+        box-shadow: none;
+        transition: all 0.9ms;
+        
+    }
+    .home main article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
+
+    .home main article:hover h5 {
+        display: initial;
+       
+      }
+   
+}
